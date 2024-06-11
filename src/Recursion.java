@@ -1,17 +1,25 @@
-class Recursion {
 
-    public static int sum(int k) {
+class Recursion {
+    
+    public Recursion(){
+ 
+    }
+    public int sum(int k) {
+        
         // Base case
         if (k <= 0) {
             return 0;
             // Recursive call
         } else {
-            /* 1. Add your code here */
+            return k+=sum(k-1);
         }
     }
 
     public static void main(String[] args) {
-        /* 2. Add your code here */
+        Recursion obj = new Recursion();
+        
+        System.out.println(obj.sum(5));
+        
 
     }
 
